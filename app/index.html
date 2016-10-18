@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+		<title></title>
+		
+		<!-- build:css styles/vendor.css -->
+		<!-- bower:css -->
+		<link rel="stylesheet" href="bower_components/ionic/release/css/ionic.css" />
+		<link rel="stylesheet" href="bower_components/angular-bootstrap-calendar/dist/css/angular-bootstrap-calendar.css" />
+		<link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css" />
+		<link rel="stylesheet" href="bower_components/ionic-ion-tinder-cards/ionic.tdcards.css" />
+		<!-- endbower -->
+		<!-- endbuild -->
+
+		<link href="styles/main.css" rel="stylesheet">
+		<!-- build:css styles/main.css -->
+		<link href="styles/main.css" rel="stylesheet">
+		<!-- endbuild -->
+		
+		<!-- ionic/angularjs js -->
+		<!-- build:js scripts/vendor.js -->
+		<!-- bower:js -->
+		<script src="bower_components/angular/angular.js"></script>
+		<script src="bower_components/angular-animate/angular-animate.js"></script>
+		<script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+		<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+		<script src="bower_components/ionic/release/js/ionic.js"></script>
+		<script src="bower_components/ionic/release/js/ionic-angular.js"></script>
+		<script src="bower_components/angular-websocket/angular-websocket.min.js"></script>
+		<script src="bower_components/ngCordova/dist/ng-cordova.js"></script>
+		<script src="bower_components/lodash/lodash.js"></script>
+		<script src="bower_components/angular-base64/angular-base64.js"></script>
+		<script src="bower_components/moment/moment.js"></script>
+		<script src="bower_components/angular-moment/angular-moment.js"></script>
+		<script src="bower_components/angular-local-storage/dist/angular-local-storage.js"></script>
+		<script src="bower_components/angular-google-chart/ng-google-chart.js"></script>
+		<script src="bower_components/firebase/firebase.js"></script>
+		<script src="bower_components/angularfire/dist/angularfire.js"></script>
+		<script src="bower_components/angular-bootstrap-calendar/dist/js/angular-bootstrap-calendar-tpls.js"></script>
+		<script src="bower_components/ng-cordova-oauth/dist/ng-cordova-oauth.js"></script>
+		<script src="bower_components/jsSHA/src/sha.js"></script>
+		<script src="bower_components/ng-twitter-api/dist/ng-twitter-api.js"></script>
+		<script src="bower_components/ionic-ion-swipe-cards/ionic.swipecards.js"></script>
+		<script src="bower_components/collide/collide.js"></script>
+		<script src="bower_components/ionic-ion-tinder-cards/ionic.tdcards.js"></script>
+		<script src="bower_components/angular-credit-cards/release/angular-credit-cards.js"></script>
+		<!-- endbower -->
+		<!-- endbuild -->
+
+		<!-- cordova script (this will be a 404 during development) -->
+		<script src="cordova.js"></script>
+		<script src="lib/ionic.cloud.min.js"></script>
+		
+		
+		
+		<!-- your app's js -->
+		<!-- build:js scripts/scripts.js -->
+		<!-- include: "type": "js", "files": ["scripts/**/*.module.js", "scripts/app.js", "scripts/**/*.js"] -->
+		<script src="scripts/around/around.module.js"></script>
+		<script src="scripts/color/color.module.js"></script>
+		<script src="scripts/common/common.module.js"></script>
+		<script src="scripts/components/apprate/apprate.module.js"></script>
+		<script src="scripts/detail/detail.module.js"></script>
+		<script src="scripts/events/events.module.js"></script>
+		<script src="scripts/feature/feahome.module.js"></script>
+		<script src="scripts/feature/feature.module.js"></script>
+		<script src="scripts/feature/other.module.js"></script>
+		<script src="scripts/feature/parking.module.js"></script>
+		<script src="scripts/feature/rlink.module.js"></script>
+		<script src="scripts/galleries/galleries.module.js"></script>
+		<script src="scripts/galleries/inter.module.js"></script>
+		<script src="scripts/galleries/out.module.js"></script>
+		<script src="scripts/home/home.module.js"></script>
+		<script src="scripts/map/map.module.js"></script>
+		<script src="scripts/menu/menu.module.js"></script>
+		<script src="scripts/news/news.module.js"></script>
+		<script src="scripts/products/products.module.js"></script>
+		<script src="scripts/seller/branch.module.js"></script>
+		<script src="scripts/app.js"></script>
+		<script src="scripts/around/around.controller.js"></script>
+		<script src="scripts/around/around.service.js"></script>
+		<script src="scripts/color/color.controller.js"></script>
+		<script src="scripts/color/color.service.js"></script>
+		<script src="scripts/common/directives/gmaps/gmaps.directive.js"></script>
+		<script src="scripts/common/services/extenal-apps.service.js"></script>
+		<script src="scripts/common/services/html-to-plain-text.service.js"></script>
+		<script src="scripts/config/internet-connectivity.js"></script>
+		<script src="scripts/config/spinner.js"></script>
+		<script src="scripts/configuration.js"></script>
+		<script src="scripts/detail/detail.controller.js"></script>
+		<script src="scripts/detail/detail.service.js"></script>
+		<script src="scripts/events/events.controller.js"></script>
+		<script src="scripts/events/events.service.js"></script>
+		<script src="scripts/feature/feahome.controller.js"></script>
+		<script src="scripts/feature/feahome.service.js"></script>
+		<script src="scripts/feature/feature.controller.js"></script>
+		<script src="scripts/feature/feature.service.js"></script>
+		<script src="scripts/feature/other.controller.js"></script>
+		<script src="scripts/feature/other.service.js"></script>
+		<script src="scripts/feature/parking.controller.js"></script>
+		<script src="scripts/feature/parking.service.js"></script>
+		<script src="scripts/feature/rlink.controller.js"></script>
+		<script src="scripts/feature/rlink.service.js"></script>
+		<script src="scripts/galleries/galleries.controller.js"></script>
+		<script src="scripts/galleries/galleries.service.js"></script>
+		<script src="scripts/galleries/inter.controller.js"></script>
+		<script src="scripts/galleries/inter.service.js"></script>
+		<script src="scripts/galleries/out.controller.js"></script>
+		<script src="scripts/galleries/out.service.js"></script>
+		<script src="scripts/home/home-data.service.js"></script>
+		<script src="scripts/home/home.controller.js"></script>
+		<script src="scripts/home/menu-items.service.js"></script>
+		<script src="scripts/home/slider.servise.js"></script>
+		<script src="scripts/map/map.controller.js"></script>
+		<script src="scripts/map/map.service.js"></script>
+		<script src="scripts/menu/menu.controller.js"></script>
+		<script src="scripts/news/article.controller.js"></script>
+		<script src="scripts/news/articles.controller.js"></script>
+		<script src="scripts/news/news.service.js"></script>
+		<script src="scripts/products/product.controller.js"></script>
+		<script src="scripts/products/products.controller.js"></script>
+		<script src="scripts/products/products.service.js"></script>
+		<script src="scripts/seller/branch.controller.js"></script>
+		<script src="scripts/seller/branch.service.js"></script>
+		<!-- /include -->
+		<!-- endbuild -->
+		<script src="lib/easeljs-0.6.0.min.js"></script>
+	</head>
+
+	<body ng-app="starter">
+		<ion-nav-view></ion-nav-view>
+	</body>
+</html>

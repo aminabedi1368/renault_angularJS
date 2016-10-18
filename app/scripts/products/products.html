@@ -1,0 +1,46 @@
+<ion-view view-title="Products">
+	<ion-content>
+		<ion-refresher
+			pulling-text="Pull to refresh..."
+			on-refresh="vm.doRefresh()">
+		</ion-refresher>
+
+		<!--
+		 | http://stackoverflow.com/questions/27239735/ionic-framwork-gridlayout-with-multiple-rows-and-column-on-which-buttons-placed
+		 | http://stackoverflow.com/questions/23779773/angularjs-loops-and-formatting/23780288#23780288
+		 -->
+		<div ng-repeat="p in vm.products" ng-if="$index%2==0" class="row">
+			<div class="card col">
+				<div class="item">
+					<h2>{{vm.products[$index].title}}</h2>
+				</div>
+
+				<div class="item item-image">
+					<img ng-src="{{vm.products[$index].thumb}}">
+				</div>
+
+				<a class="item item-icon-left" href="#/app/product/{{vm.products[$index].id}}">
+					<i class="icon ion-arrow-right-c"></i>
+					Read more
+				</a>
+			</div>
+
+			<div class="card col">
+				<div class="item">
+					<h2>{{vm.products[$index + 1].title}}</h2>
+				</div>
+
+				<div class="item item-image">
+					<img ng-src="{{vm.products[$index + 1].thumb}}">
+				</div>
+
+				<a class="item item-icon-left" href="#/app/product/{{vm.products[$index + 1].id}}">
+					<i class="icon ion-arrow-right-c"></i>
+					Read more
+				</a>
+			</div>
+
+		</div>
+
+	</ion-content>
+</ion-view>

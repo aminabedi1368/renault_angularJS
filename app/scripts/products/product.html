@@ -1,0 +1,16 @@
+<ion-view view-title="Product">
+	<ion-content>
+
+		<ion-slide-box>
+			<ion-slide ng-repeat="pic in vm.product.pictures">
+				<div class="box blue"><img ng-src="{{pic}}"/></div>
+			</ion-slide>
+		</ion-slide-box>
+
+		<div class="content-inner">
+			<h1>{{vm.product.title}}</h1>
+			<p>{{vm.product.body}}</p>
+			<p> test amin</p>
+		</div>
+	</ion-content>
+</ion-view>

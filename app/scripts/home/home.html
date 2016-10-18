@@ -1,0 +1,63 @@
+<ion-view view-title="Renault Talisman">
+	<ion-content>
+	
+	
+		<div class="home-hello">
+			<!-- <img src="images/image/1.JPG"/> -->
+		<ion-slide-box does-continue="true" auto-play="true">
+			<ion-slide ng-repeat="pic in vm.entries">
+			<div class="box blue"><img ng-src="{{pic.Pic_path}}"/></div>
+			
+			</ion-slide>
+		</ion-slide-box>
+		</div>	
+			
+			
+		<!--
+		 | http://stackoverflow.com/questions/27239735/ionic-framwork-gridlayout-with-multiple-rows-and-column-on-which-buttons-placed
+		 | http://stackoverflow.com/questions/23779773/angularjs-loops-and-formatting/23780288#23780288
+		 -->
+		<div ng-repeat="e in vm.entries" ng-if="$index%3==0" class="row">
+
+			<div class="card col home">
+				<a class="item item-text-wrap" href="#/app/{{vm.entries[$index].path}}">
+					<h1><i class="icon {{vm.entries[$index].icon}}"></i></h1>
+					<h2>{{vm.entries[$index].title}}</h2>
+				</a>
+			</div>
+
+			<div class="card col home">
+				<a class="item item-text-wrap" href="#/app/{{vm.entries[$index + 1].path}}">
+					<h1><i class="icon {{vm.entries[$index + 1].icon}}"></i></h1>
+					<h2>{{vm.entries[$index + 1].title}}</h2>
+				</a>
+			</div>
+			<div class="card col home">
+				<a class="item item-text-wrap" href="#/app/{{vm.entries[$index + 2].path}}">
+					<h1><i class="icon {{vm.entries[$index + 2].icon}}"></i></h1>
+					<h2>{{vm.entries[$index + 2].title}}</h2>
+				</a>
+			</div>
+			
+
+		</div>
+
+		<div class="list card" style="direction:rtl; !important ">
+			
+			
+			<a href="tel:{{vm.phoneNumber}}" class="item item-icon-right">
+				<i class="icon ion-ios-telephone"></i>
+				تماس تلفنی با ما
+			</a>
+
+	
+			 <a class="item item-icon-right" href="mailto:info@neginkhodro.com?subject=ارتباط از طریق اپلیکیشن تالسمن&body=متن ایمیل ارسالی" target="_blank">
+			 <i class="icon ion-email"></i>
+				ارسال ایمیل
+			 </a>
+
+			
+		</div>
+
+	</ion-content>
+</ion-view>

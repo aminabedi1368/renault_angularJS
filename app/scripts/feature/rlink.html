@@ -1,0 +1,14 @@
+<ion-view view-title="R-Link">
+	<ion-content>
+			<ion-slide-box show-pager="false">
+			<ion-slide ng-repeat="picture in vm.entries">
+				<div class="box blue">
+					<img ng-src="{{picture.path_1}}"/>
+				</div>
+				
+				<p style="text-align:justify; direction:rtl; padding:3% ; font-size:80% ">{{picture.path}}</p>
+				
+			</ion-slide>
+			</ion-slide-box>
+	</ion-content>
+</ion-view>

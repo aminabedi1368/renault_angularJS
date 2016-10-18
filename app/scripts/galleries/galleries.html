@@ -1,0 +1,21 @@
+<ion-view view-title="گالری">
+	<ion-content>
+		
+			
+			
+		<div class="card" ng-repeat="gallery in vm.entries">	
+			<div class="item" style="direction:rtl">		
+			<h1>{{gallery.title}}</h1>
+			</div>
+			<div class="item item-image">
+			<a  href="#/app/{{gallery.path}}"> <img ng-src="{{gallery.path_1}}"></a>
+			</div>
+
+			
+				
+				
+			
+		</div>
+
+	</ion-content>
+</ion-view>

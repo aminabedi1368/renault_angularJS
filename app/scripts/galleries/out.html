@@ -1,0 +1,20 @@
+<ion-view view-title="Gallery">
+	<ion-content>
+	<script>
+    document.addEventListener("deviceready", onDeviceReady, false);
+    function onDeviceReady()
+    {
+        screen.lockOrientation('landscape');
+    }
+</script>
+
+			<div  ng-repeat="picture in vm.entries">
+			
+				<div style="float:right;">
+					<img ng-src="{{picture.path_1}}"/>
+				</div>
+			</div>`
+ 
+		
+	</ion-content>
+</ion-view>

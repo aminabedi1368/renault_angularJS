@@ -1,0 +1,25 @@
+<ion-view view-title="رنگ های تالیسمان ">
+
+	<ion-content>
+	
+		
+	
+		<ion-slide-box on-slide-changed="activateTabs($index)" show-pager="false">
+
+            <ion-slide ng-repeat="pic in vm.entries track by $index">
+			<div class="box blue"><img ng-src="{{pic.path}}"/></div>
+			</ion-slide>
+
+        </ion-slide-box>
+	<div style="width:100%">
+    <a ng-repeat="pic in vm.entries track by $index"
+       ng-class="{'active': $index === current}"
+       ng-click="slide($index)"
+      ><img ng-src="{{pic.thumb}}" style="width:12%"></a>
+	 
+	</div>
+		
+	</ion-content>
+</ion-view>
+
+
